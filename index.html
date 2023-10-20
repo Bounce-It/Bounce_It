@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Bounce It</title>
+  </head>
+  <body>
+    <div id="body">
+      <h1 id="heading">
+        B<img
+          src="logo.png"
+          width="90"
+          height="90"
+          style="padding-right: 15px"
+        />unce It!
+      </h1>
+      <button class="btn">
+        <a href="#" onclick="toggle1()">Start Game</a>
+      </button>
+      <button class="btn" id="instructions">
+        <a href="#" onclick="toggle()">Instructions</a>
+      </button>
+    </div>
+    <div id="popup">
+      <div class="content">
+        <h1 style="text-align: center">About Game</h1>
+        <p>
+          Bounce It is a simple yet addictive casual mobile game in which
+          players control a bouncing ball, guiding it through various obstacles
+          and challenges to win the game.
+        </p>
+      </div>
+      <div class="content">
+        <h1 style="text-align: center">Instructions</h1>
+        <p>
+          Utilize the left and right arrow keys for horizontal movement and the
+          up arrow key to jump. Exercise caution when encountering '<b
+            style="color: red"
+            >Red</b
+          >' tiles, as they could prematurely conclude your game.
+        </p>
+      </div>
+      <button id="instructions">
+        <button class="btn"><a href="#" onclick="toggle()">Close</a></button>
+      </button>
+    </div>
+
+    <div id="popup1">
+      <div class="content">
+        <button class="btn"><a href="/Bounce.html">Level 1</a></button>
+        <button class="btn"><a href="#">Level 2</a></button>
+        <button class="btn"><a href="#">Level 3</a></button>
+        <button class="btn"><a href="#">Level 4</a></button>
+      </div>
+      <button id="instructions">
+        <button class="btn"><a href="#" onclick="toggle1()">Close</a></button>
+      </button>
+    </div>
+
+    <script type="text/javascript">
+      function toggle() {
+        var blur = document.getElementById("body");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("active");
+      }
+
+      function toggle1() {
+        var blur = document.getElementById("body");
+        blur.classList.toggle("active");
+        var popup1 = document.getElementById("popup1");
+        popup1.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
