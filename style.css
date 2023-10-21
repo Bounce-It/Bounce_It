@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: #cbc7c7;
   font-family: "Poppins", sans-serif;
 }
 
@@ -66,18 +66,22 @@ label {
   text-align: center;
   letter-spacing: 5px;
   margin-top: 10vh;
+  color: #555;
 }
 
 .btn {
+  font-family: game;
   display: block;
   margin: 30px auto;
   padding: 15px 30px;
   border-radius: 8px;
-  background: #000;
+  background: #555;
   border: none;
+  letter-spacing: 5px;
 }
 
 .btn a {
+  font-family: game;
   text-decoration: none;
   color: #fff;
 }
@@ -131,6 +135,7 @@ label {
 }
 
 .content h1 {
+  font-family: game;
   font-weight: 500;
   color: #333;
 }
@@ -143,5 +148,18 @@ label {
 }
 
 .btn1 {
-  margin-top: 85vh;
+  margin-top: 80vh;
+}
+
+.btnclose {
+  background-color: black;
+}
+
+.level {
+  margin-top: 20px;
+  text-align: center;
+  font-family: game;
+  color: #8b8b8b;
+  letter-spacing: 5px;
+  font-size: 35px;
 }

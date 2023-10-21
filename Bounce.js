@@ -99,7 +99,7 @@ Bounce.prototype.load_map = function (map) {
   this.current_map = map;
 
   this.current_map.background = map.background || "#333";
-  this.current_map.gravity = map.gravity || { x: 0, y: 0.3 };
+  this.current_map.gravity_values = map.gravity_values || { x: 0, y: 0.3 };
   this.tile_size = map.tile_size || 16;
 
   var _this = this;
@@ -191,12 +191,12 @@ Bounce.prototype.move_player = function () {
     Math.round(this.player.loc.y / this.tile_size)
   );
 
-  if (tile.gravity) {
-    this.player.vel.x += tile.gravity.x;
-    this.player.vel.y += tile.gravity.y;
+  if (tile.gravity_values) {
+    this.player.vel.x += tile.gravity_values.x;
+    this.player.vel.y += tile.gravity_values.y;
   } else {
-    this.player.vel.x += this.current_map.gravity.x;
-    this.player.vel.y += this.current_map.gravity.y;
+    this.player.vel.x += this.current_map.gravity_values.x;
+    this.player.vel.y += this.current_map.gravity_values.y;
   }
 
   if (tile.friction) {
@@ -230,12 +230,12 @@ Bounce.prototype.move_player = function () {
   } else this.jump_switch++;
 
   this.player.vel.x = Math.min(
-    Math.max(this.player.vel.x, -this.current_map.vel_limit.x),
-    this.current_map.vel_limit.x
+    Math.max(this.player.vel.x, -this.current_map.velocity_limit.x),
+    this.current_map.velocity_limit.x
   );
   this.player.vel.y = Math.min(
-    Math.max(this.player.vel.y, -this.current_map.vel_limit.y),
-    this.current_map.vel_limit.y
+    Math.max(this.player.vel.y, -this.current_map.velocity_limit.y),
+    this.current_map.velocity_limit.y
   );
 
   this.player.loc.x += this.player.vel.x;
@@ -360,14 +360,14 @@ Bounce.prototype.move_player = function () {
 
 Bounce.prototype.update_player = function () {
   if (this.key.left) {
-    if (this.player.vel.x > -this.current_map.vel_limit.x)
+    if (this.player.vel.x > -this.current_map.velocity_limit.x)
       this.player.vel.x -= this.current_map.movement_speed.left;
   }
 
   if (this.key.up) {
     if (
       this.player.can_jump &&
-      this.player.vel.y > -this.current_map.vel_limit.y
+      this.player.vel.y > -this.current_map.velocity_limit.y
     ) {
       this.player.vel.y -= this.current_map.movement_speed.jump;
       this.player.can_jump = false;
@@ -375,7 +375,7 @@ Bounce.prototype.update_player = function () {
   }
 
   if (this.key.right) {
-    if (this.player.vel.x < this.current_map.vel_limit.x)
+    if (this.player.vel.x < this.current_map.velocity_limit.x)
       this.player.vel.x += this.current_map.movement_speed.left;
   }
 
