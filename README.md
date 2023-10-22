@@ -68,7 +68,7 @@ Start the server
 
 **JavaScript:** For enhancing interactivity and features.
 
-## Third-Party Assets
+## Third-Party Assets </>
 
 1. **Canvas API:** The Canvas API can draw shapes, lines, curves, boxes, text, and images, with colors, rotations, transparencies, and other pixel manipulations.
 
@@ -125,4 +125,5 @@ death:
 
 ## Links 🔗
 
-[![Game Link](/logo.png)](https://bounceit.netlify.app/)
+🟠 [Game Link](https://bounceit.netlify.app/)
+
