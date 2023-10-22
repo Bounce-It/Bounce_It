@@ -1,10 +1,10 @@
 # Bounce It! 🟠
 
-**Bounce It**, an exciting casual game available on both mobile and web platforms. Your objective is to guide a ball through a variety of obstacles and challenges. With its simple yet highly addictive gameplay, _Bounce It_ appeals to both new and experienced gamers.
+**Bounce It**, is an exciting casual game on both mobile and web platforms. Your objective is to guide a ball through a variety of obstacles and challenges. With its simple yet highly addictive gameplay, _Bounce It_ appeals to both new and experienced gamers.
 
 ## Overview 📖
 
-**Bounce It**, a captivating casual game accessible on both mobile and web platforms. Your primary mission is to deftly navigate a bouncing ball through various obstacles and challenging scenarios, aiming for end point thus leading to success.
+**Bounce It**, is a captivating casual game accessible on both mobile and web platforms. Your primary mission is to deftly navigate a bouncing ball through various obstacles and challenging scenarios, aiming for an endpoint thus leading to success.
 
 ## Features 🚀
 
@@ -12,13 +12,13 @@
 - **Map Data:** An array representing the map tiles. Each number corresponds to a key.
 - **Key Variables**:
   - **id** - An integer that corresponds with a tile in the data array.
-  - **colour** - Any javascript compatible colour variable.
+  - **color** - Any javascript-compatible color variable.
   - **solid** - Whether the tile is solid or not, defaults to false.
   - **bounce** - How much velocity is preserved upon hitting the tile, 0.5 is half.
   - **jump** - Whether the player can jump while over the tile, defaults to false.
   - **friction** - friction of the tile, must have _X_ and _Y_ values.
   - **gravity** - gravity of the tile, must have X and Y values.
-  - **fore** - whether the tile is drawn in front of the player, defaults to false.
+  - **fore** - whether the tile is drawn before the player, defaults to false.
   - **script** - refers to a script in the scripts section, executed if it is touched.
 
 ## How to Play 🎮
@@ -30,15 +30,15 @@
 5. For movement control, use the left and right arrow keys, and employ the up arrow key to make your character jump.
 6. When confronted with **Red** tiles, proceed with caution, as they have the potential to terminate your game prematurely.
 7. Upon successfully reaching the endpoint, signified by a **Yellow** tile, you will progress to the next level.
-8. Upon reaching the _Third level_, the final stage, a successful completion will return you to the Home page.
+8. Upon reaching the _Third level_, the final stage, successful completion will return you to the Home page.
 9. During gameplay, a _timer_ and _scoreboard_ will be prominently displayed, allowing you to track your performance.
 
 ## Setup and Installation ⚙️
 
 1. Clone this repository: `git clone https://github.com/Bounce-It/Bounce_It.git`
-2. Open `index.html` file in Visual Studio and run the file.
+2. Open the `index.html` file in Visual Studio and run the file.
 3. Open a web browser and go to `http://127.0.0.1:5500/` to play the game.
-4. Game Link: `https://bounceit.netlify.app/#`, you could also access game through this link.
+4. Game Link: `https://bounceit.netlify.app/#`, you can also access the game through this link.
 
 ## Run Locally
 
@@ -59,7 +59,7 @@ Start the server
 ![Live Server Snapshot](golive.png)
 
 ```bash
-  Click 'Go Live' like shown in above Snapshot, in your Visual Studio Editor.
+  Click 'Go Live' shown in the above Snapshot, in your Visual Studio Editor.
 ```
 
 ## Tech Stack 🛠
@@ -70,24 +70,19 @@ Start the server
 
 ## Third-Party Assets </>
 
-1. **Canvas API:** The Canvas API can draw shapes, lines, curves, boxes, text, and images, with colors, rotations, transparencies, and other pixel manipulations.
+1. **jQuery:** jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
 
 _Code Snippet_:
 
 ```bash
-  <canvas id="canvas"></canvas>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 ```
 
-2. **Sweet Alert 2 API:** This API allows us to create custom alert boxes.
+2. **Sweet Alert 2:** This API allows us to create custom alert boxes.
 
 _Code Snippet_:
 
 ```bash
-  <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
 ```
 
