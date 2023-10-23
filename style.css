@@ -130,6 +130,28 @@ label {
   transition: 0.5s;
 }
 
+#popup2 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+#popup2.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
 .content {
   padding: 15px;
 }
@@ -148,7 +170,8 @@ label {
 }
 
 .btn1 {
-  margin-top: 80vh;
+  margin-top: 75vh;
+  margin-bottom: 0;
 }
 
 .btnclose {
@@ -162,4 +185,17 @@ label {
   color: #8b8b8b;
   letter-spacing: 5px;
   font-size: 35px;
+}
+
+#name{
+  font-family: game;
+  font-size: 18px;
+  margin: 5px auto 0;
+  color: #000;
+}
+
+input{
+  margin: 18px auto;
+  display: block;
+  text-align: center;
 }

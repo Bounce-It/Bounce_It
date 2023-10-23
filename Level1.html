@@ -11,12 +11,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
-
     <script type="text/javascript" src="Bounce.js"></script>
   </head>
 
   <body>
     <h1 class="level">Level 1</h1>
+    <p style="color: #8b8b8b" id="name"></p>
     <canvas id="canvas"></canvas>
 
     <label for="viewport">
@@ -29,6 +29,11 @@
     /></label>
 
     <button class="btn btn1 btnclose"><a href="/index.html">Go Back</a></button>
+
+    <script>
+      var name = (document.getElementById("name").innerHTML =
+        "Hi! " + localStorage.getItem("name") + ", Let's play");
+    </script>
 
     <script type="text/javascript">
       window.requestAnimFrame =
@@ -362,7 +367,7 @@
             'this.player.colour = "#"+(Math.random()*0xFFFFFF<<0).toString(16);',
           /* customised alert box */
           next_level:
-            "Swal.fire({icon: 'success', title: 'Successful', text: 'Redirecting to Level 2!', confirmButtonText: 'Next Level'}).then((result) => {if(result.isConfirmed){window.location.href = '/Level2.html'}})",
+            "Swal.fire({icon: 'success', title: 'Your Score: 100', text: 'Redirecting to Level 2!', confirmButtonText: 'Next Level'}).then((result) => {if(result.isConfirmed){window.location.href = '/Level2.html'}}); localStorage.setItem('score', 100);",
           death:
             "Swal.fire({icon: 'error', title: 'You Died!', text: 'Reloading the same Level!', showConfirmButton: false, timer: 2000}); this.load_map(map);",
           unlock:

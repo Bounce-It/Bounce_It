@@ -18,7 +18,7 @@
         />unce It!
       </h1>
       <button class="btn">
-        <a href="#" onclick="toggle1()">Start Game</a>
+        <a href="#" onclick="addName()">Start Game</a>
       </button>
       <button class="btn" id="instructions">
         <a href="#" onclick="toggle()">Instructions</a>
@@ -63,6 +63,23 @@
       </button>
     </div>
 
+    <div id="popup2">
+      <div class="content">
+        <h1 style="text-align: center">Type your Name</h1>
+        <form>
+          <input type="text" placeholder="Name" id="name" required />
+          <button type="submit" class="btn">
+            <a href="#" id="continue" onclick="nameCheck()">Continue</a>
+          </button>
+        </form>
+      </div>
+      <button id="instructions">
+        <button class="btn btnclose">
+          <a href="#" onclick="addName()">Close</a>
+        </button>
+      </button>
+    </div>
+
     <script type="text/javascript">
       function toggle() {
         var blur = document.getElementById("body");
@@ -76,6 +93,25 @@
         blur.classList.toggle("active");
         var popup1 = document.getElementById("popup1");
         popup1.classList.toggle("active");
+      }
+
+      function addName() {
+        var blur = document.getElementById("body");
+        blur.classList.toggle("active");
+        var popup2 = document.getElementById("popup2");
+        popup2.classList.toggle("active");
+      }
+
+      function nameCheck() {
+        var cont = document.getElementById("continue");
+        var input = document.getElementById("name").value;
+        if (input) {
+          toggle1();
+          addName();
+          localStorage.setItem('name', input);
+          localStorage.removeItem('score');
+        }
+        cont.removeEventListener("click", onclick);
       }
     </script>
   </body>
