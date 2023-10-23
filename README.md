@@ -40,7 +40,7 @@
 3. Open a web browser and go to `http://127.0.0.1:5500/` to play the game.
 4. Game Link: `https://bounceit.netlify.app/#`, you can also access the game through this link.
 
-## Run Locally
+## Run Locally 💻
 
 Clone the project
 
@@ -112,9 +112,47 @@ death:
 
 5. **ColorSpace**: Color Palettes Generator and Color Gradient Tool.
 
+## Reflection 🎯
+
+**INTRODUCTION**
+
+The **Bounce It** game project, a dynamic web application leveraging HTML, CSS, and JavaScript, alongside integrations with the canvas, jQuery, and sweetAlert2 APIs, was an ambitious venture from its conception. Over 1.5 months, our Scrum team worked diligently to bring this vision to life. This reflection aims to highlight our journey, the challenges faced, and the lessons learned throughout the Scrum cycles.
+
+**SPRINTS OVERVIEW**
+
+Over six weeks, we organized our development cycle into three two-week sprints. The initial sprint focused on setting up the game’s basic architecture and integrating the canvas and jQuery APIs. The second sprint was centered around game dynamics, user interface, and integrating sweetAlert2 for enhanced user feedback. The final sprint was dedicated to testing, refining, and finalizing our product.
+
+**SUCCESSES**
+
+1. **Clear Vision from the Outset**: Having a precise vision for our game from the beginning was instrumental. Team Discussions presented clear requirements, ensuring the team had a mutual understanding of the game’s objectives and desired features.
+
+2. **Adaptability**: Despite a few unforeseen technical challenges, especially around the canvas and sweetAlert2 integration, our team showcased remarkable flexibility. We adjusted our strategies in real time, ensuring that the development process remained unhindered.
+
+3. **Effective Team Collaboration**: The synergy within our team was commendable. Open communication, paired with daily stand-ups, fostered an environment where everyone felt valued and heard. This collaborative spirit was instrumental in navigating challenges and ensuring timely deliveries.
+
+**CHALLENGES**
+
+1. **Integration Hurdles**: Integrating multiple APIs, especially Canvas with jQuery, posed initial challenges. There were instances of overlapping functionalities and unexpected behaviors, which required additional time to debug and resolve.
+
+2. **Scope Management**: As the project progressed, new ideas and enhancements surfaced. Balancing these with the existing backlog, while ensuring we didn't deviate from our primary objectives, was occasionally challenging.
+
+3. **Testing on Different Browsers**: Ensuring compatibility across various browsers required additional effort during our last sprint. Some unexpected discrepancies emerged, especially in older browser versions, which demanded prompt solutions.
+
+**LESSONS LEARNED**
+
+1. **Early Prototyping**: A prototype in the early stages could have helped identify potential integration issues sooner. Future projects could benefit from allocating time for this during the initial sprint.
+
+2. **Regular Backlog Refinement**: Continuous attention to the backlog, ensuring it remains prioritized and up-to-date, is crucial. We realized the significance of this particularly during the latter half of the project when the scope began to expand.
+
+3. **Enhanced Testing**: While our testing phase was robust, integrating continuous testing throughout the sprints could have flagged browser compatibility issues sooner.
+
+**CONCLUSION**
+
+The *Bounce It* game project was a valuable learning experience for our Scrum team. From understanding the intricacies of API integrations to navigating the complexities of scope management, each challenge presented an opportunity for growth. As we move forward to new projects, the lessons from *Bounce It* will undoubtedly serve as guiding posts, ensuring even more streamlined and efficient Scrum cycles in the future.
+
 ## Contributors 🤝
 
-- [Prateek Choudavarpu](https://github.com/prateek10201)
+- [Prateek Choudavarpu](https://github.com/prateek10201) - C26913545
 - [Shubham Pardeshi](https://github.com/Shubham-2110)
 - [Manikanta](https://github.com/manikanta799)
 
