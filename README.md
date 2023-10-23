@@ -153,7 +153,7 @@ The *Bounce It* game project was a valuable learning experience for our Scrum te
 ## Contributors 🤝
 
 - [Prateek Choudavarpu](https://github.com/prateek10201) - C26913545
-- [Shubham Pardeshi](https://github.com/Shubham-2110)
+- [Shubham Pardeshi](https://github.com/Shubham-2110) - C28026476
 - [Manikanta](https://github.com/manikanta799)
 
 ## Links 🔗
